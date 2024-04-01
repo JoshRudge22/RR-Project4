@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django import forms 
-from .models import Job, AvailableTime
+from .models import Job, AvailableTime, NoticeTimes
 
 @admin.register(Job)
-class JobAdmin(admin.ModelAdmin):
+class JobAdmin(SummernoteModelAdmin):
     list_display = ('job_title', 'address', 'hired')
     list_filter = ('hired',)
     def hired(self, obj):
@@ -14,3 +14,7 @@ class JobAdmin(admin.ModelAdmin):
 @admin.register(AvailableTime)
 class AvailableTimeAdmin(admin.ModelAdmin):
     list_display = ['time']
+    
+@admin.register(NoticeTimes)
+class NoticeTimesAdmin(admin.ModelAdmin):
+    list_display = ['notice']   

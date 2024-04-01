@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4 text-center mb-4">Advertising Needs!</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <h2 class="card-title">Advertise a Job</h2>
+                        <p class="card-text">Need to start hiring staff but you don't have the time to read through all of those CV's.</p>
+                        <p class="card-text">There's nothing more annoying than having to sit through and read 100 CVs and 80 of them not having the experince or qaulifactions you need.</p>
+                        <p class="card-text">Here at Rudgeys Recruitment We can do all the leg work! All we need you to do is give us some infomation:</p>
+                        <ul class="card-text">
+                            <li>Company Name</li>
+                            <li>Company Address</li>
+                            <li>Company Phone Number</li>
+                            <li>Company Email Address</li>
+                            <li>Job Benefits</li>
+                            <li>Job Description</li>
+                            <li>Job Requirements</li>
+                            <li>Interview Dates</li>
+                            <li>Interview Times</li>
+                            <li>Start Dates</li>
+                            <li>Who do we send the CVs too</li>
+                            <li>Where we should send the candidates for interviews</li>
+                        </ul>
+                        <br><br>
+                        <a class=" advertise btn btn-primary btn-lg" href="{% url 'hiring' %}" role="button">Advertise My Role</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-success mt-4 mt-md-0">
+                    <div class="card-body">
+                        <h2 class="card-title">Example of What We Need!</h2>
+                        <p class="card-text"><h5>Company Name:</h5> Rudgeys Recruitment</p>
+                        <p class="card-text"><h5>Company Email:</h5> info@rudgeys.com</p>
+                        <p class="card-text"><h5>Company Number:</h5> 01925 444444</p>
+                        <p class="card-text"><h5>Company Notes:</h5> Please send cvs to Barry at info@rudgeys.com</p>
+                        <h5>Job description:</h5>
+                        <ul>
+                            <li>Recruitment Advisor</li>
+                            <li>37 Hours week</li>
+                            <li>£25,000 a year</li>
+                            <li>Warrington Bewesy</li>
+                            <li>Day to day of the role will be looking at incoming cvs for jobs and identifying the correct candidates to interview</li>
+                            <li>2 years recruitment required</li> 
+                            <li>Interviews start 10th of April. Times avaiable any time from 10:00am to 16:00pm</li> 
+                        </ul>
+                        <p class="card-text">Have all of this on a word or pdf they just click on the form and attach it with any further infomation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

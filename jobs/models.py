@@ -50,3 +50,9 @@ class NoticeTimes(models.Model):
 
     def __str__(self):
         return self.notice
+
+class JobApplication(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, default=None)
+    
+    def __str__(self):
+        return f"Application for {self.job} by {self.user.username}"

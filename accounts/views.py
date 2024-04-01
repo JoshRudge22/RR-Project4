@@ -5,6 +5,9 @@ from .models import ContactUsForm, Hiring
 def home(request):
     return render(request, 'index.html')
 
+def advertising(request):
+    return render(request, 'advertising.html')
+
 def submitted(request):
     return render(request, 'submitted.html')
 

@@ -1,5 +1,5 @@
 from django import forms
-from .models import Profile, AvailableTime
+from .models import Profile, AvailableTime, JobApplication
 
 class ProfileForm(forms.ModelForm):
     class Meta:
@@ -10,3 +10,8 @@ class AvailableTimeForm(forms.ModelForm):
     class Meta:
         model = AvailableTime
         fields = ['time']
+
+class JobApplicationForm(forms.ModelForm):
+    class Meta:
+        model = JobApplication
+        fields = '__all__'
