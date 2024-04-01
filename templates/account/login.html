@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+
+{% block head_title %}{% trans "Sign In" %}{% endblock head_title %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card p-4">
+                <h1 class="card-title text-center mb-4">{% trans "Sign In" %}</h1>
+
+                <p class="card-text text-center">{% blocktrans %}If you have not created an account yet, then please
+                <a href="{{ signup_url }}" class="text-decoration-none">sign up</a> first.{% endblocktrans %}</p>
+
+                <form class="form login mt-4" method="POST" action="{% url 'account_login' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {% if redirect_field_value %}
+                        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    {% endif %}
+                    <div class="d-grid gap-2 mt-3">
+                        <a class="btn btn-secondary" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+                        <button class="submit btn btn-primary" type="submit">{% trans "Sign In" %}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

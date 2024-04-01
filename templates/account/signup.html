@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock head_title %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h1 class="text-center mb-4">{% trans "Sign Up" %}</h1>
+
+      <p class="text-center">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+
+      <form class="form" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        <div class="mb-3">
+          <label for="inputUsername" class="form-label">{% trans "Username" %}</label>
+          <input type="text" class="form-control" id="inputUsername" name="username" placeholder="{% trans "Enter your username" %}" required autofocus>
+        </div>
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">{% trans "Email address" %}</label>
+          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="{% trans "Enter your email address" %}" required>
+        </div>
+        <div class="mb-3">
+          <label for="inputPassword" class="form-label">{% trans "Password" %}</label>
+          <input type="password" class="form-control" id="inputPassword" name="password1" placeholder="{% trans "Enter your password" %}" required>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">{% trans "Confirm Password" %}</label>
+          <input type="password" class="form-control" id="confirmPassword" name="password2" placeholder="{% trans "Confirm your password" %}" required>
+        </div>
+        <button type="submit" class="submit btn btn-primary">{% trans "Sign Up" %} &raquo;</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
+
