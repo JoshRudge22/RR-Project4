@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center mt-5">Rudgeys Recruitment</h1>
+
+        <section class="bg-light py-5 mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4">What is Rudgeys Recruitment?</h2>
+                <p class="lead text-center">Rudgeys Recruitment is your premier job board based in Warrington, dedicated to connecting local businesses with top talent in the area. Our platform serves as a valuable resource for companies seeking skilled professionals and individuals pursuing their next career opportunity.</p>
+                <p class="lead text-center">At Rudgeys Recruitment, we understand the importance of finding the right job opportunity that aligns with your skills, experience, and career aspirations. Our comprehensive job board offers a diverse range of employment opportunities from various industries within the Warrington area.</p>
+            </div>
+        </section>
+
+        <section class="bg-light py-5 mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4">How It Works</h2>
+                <p class="lead text-center">For employers, we kindly ask for job specifics, desired employee qualifications, and any time constraints. Leveraging this information, we meticulously pair your job listing with suitable candidates from our extensive database</p>
+                <p class="lead text-center">As for employees, we invite you to provide your CV and outline your job preferences, including salary expectations, preferred working hours, and more. By understanding your needs, we strive to connect you with opportunities that align perfectly with your career aspirations.</p>
+            </div>
+        </section>
+        <section class="bg-light py-5 mt-5">
+            <div class="container">
+                <h2 class="text-center mb-4">The Steps For Applying or Hiring</h2>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center mb-5">
+                            <h3>Job Board:</h3>
+                            <p class="lead">Take a look at all the jobs we have advertised by signing up. All you need to do is click apply and you're one step closer to that big step in your career.</p>
+                            <p class="lead">What are you waiting for? Let's get you signed in and start searching!</p>
+                            <a href="{% url 'account_login' %}" class="btn btn-primary btn-lg log_in">Sign In</a>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <h3>Hiring:</h3>
+                            <p class="lead">We have some of Warrington's best talent looking for their next big break. By filling out one of our job forms, we find you the dream employee!</p>
+                            <p class="lead">Get your role on our website just click below to fill out our form!</p>
+                            <a href="#" class="btn btn-primary btn-lg log_in">Hiring</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

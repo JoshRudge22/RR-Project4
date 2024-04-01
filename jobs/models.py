@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Job(models.Model):
     job_title = models.CharField(max_length=100)
@@ -27,3 +28,25 @@ class AvailableTime(models.Model):
 
     def __str__(self):
         return self.time
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    email = models.EmailField(blank=True)
+    phone_number = models.CharField(max_length=15, blank=True)
+    cv = models.FileField(upload_to='cv/', blank=True)
+    address = models.CharField(max_length=100, blank=True)
+    notice = models.ManyToManyField('NoticeTimes')
+
+
+class NoticeTimes(models.Model):
+    NOTICE_CHOICES = [
+        ('ASAP', 'ASAP'),
+        ('1 Week', '1 Week'),
+        ('2 Weeks', '2 Weeks'),
+        ('3 Weeks', '3 Weeks'),
+        ('4 Week or more', '4 Weeks or more'),
+    ]
+    notice = models.CharField(max_length=20, choices=NOTICE_CHOICES)
+
+    def __str__(self):
+        return self.notice

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <h1 class="title text-center mb-4">Job Board</h1>
+    
+    {% for job in jobs %}
+    <div class="card mb-4">
+        <div class="card-body">
+            <h2 class="card-title">{{ job.job_title }}</h2>
+            <hr>
+            <h3 class="card-subtitle mb-3">Benefits:</h3>
+            <p class="card-text">{{ job.job_benefits |safe }}</p>
+            <hr>
+            <h3 class="card-subtitle mb-3">Address:</h3>
+            <p class="card-text">{{ job.address }}</p>
+            <hr>
+            <h3 class="card-subtitle mb-3">Job Description:</h3>
+            <p class="card-text">{{ job.job_details |safe }}</p>
+            <hr>
+            <h3 class="card-subtitle mb-3">Job Requirements:</h3>
+            <p class="card-text">{{ job.job_requirements |safe }}</p>
+            <hr>
+            {% if job.hired %}
+            <p class="text-danger">This position is no longer available.</p>
+            {% else %}
+            <p class="text-success">This position is currently open for applications.</p>
+            {% if job.available_times.all %}
+            <h3 class="card-subtitle mb-3">Interview Date:</h3>
+            <p class="card-text">{{ job.interview_date }}</p>                    
+            <h3 class="card-subtitle mb-3">Available Interview Times:</h3>
+            {% for available_time in job.available_times.all %}
+            <p class="card-text">{{ available_time.time }}</p>
+            {% endfor %}
+            {% endif %} 
+            <button class="btn btn-success"><a href="#" class="text-white text-decoration-none">Apply Here</a></button>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+    
+    <div class="d-flex justify-content-center">
+        <ul class="pagination">
+            {% if jobs.has_previous %}
+            <li class="page-item">
+                <a href="?page={{ jobs.previous_page_number }}" class="page-link">Previous</a>
+            </li>
+            {% endif %}
+            <li class="page-item disabled">
+                <span class="page-link">Page {{ jobs.number }} of {{ jobs.paginator.num_pages }}</span>
+            </li>
+            {% if jobs.has_next %}
+            <li class="page-item">
+                <a href="?page={{ jobs.next_page_number }}" class="page-link">Next</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% endblock %}v
