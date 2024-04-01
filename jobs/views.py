@@ -4,6 +4,9 @@ from django.contrib.auth.decorators import login_required
 from .models import Job, Profile
 from .forms import ProfileForm
 
+def submitted(request):
+    return render(request, 'submitted.html')
+
 
 def jobs(request):
     jobs = Job.objects.all()
