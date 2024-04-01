@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django import forms 
 from .models import Job, AvailableTime, NoticeTimes
+from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Job)
 class JobAdmin(SummernoteModelAdmin):
