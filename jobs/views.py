@@ -12,7 +12,7 @@ def submitted(request):
 
 def jobs(request):
     jobs = Job.objects.all()
-    items_per_page = 6
+    items_per_page = 5
     paginator = Paginator(jobs, items_per_page)
     page = request.GET.get('page')
     try:
