@@ -54,6 +54,12 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = 'profile'
 LOGOUT_REDIRECT_URL = 'home'
 
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = 'joshrudge@hotmail.com'
+EMAIL_HOST_PASSWORD = 'rfvapomfgjiivckh'
+EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',

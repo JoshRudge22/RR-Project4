@@ -37,6 +37,9 @@ class Profile(models.Model):
     address = models.CharField(max_length=100, blank=True)
     notice = models.ManyToManyField('NoticeTimes')
 
+    def __str__(self):
+        return self.user.username
+
 
 class NoticeTimes(models.Model):
     NOTICE_CHOICES = [

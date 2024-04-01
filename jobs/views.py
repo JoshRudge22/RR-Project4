@@ -25,12 +25,17 @@ def jobs(request):
 
 @login_required
 def profile(request):
-    profile = get_object_or_404(Profile, user=request.user)
+    try:
+        profile = Profile.objects.get(user=request.user)
+    except Profile.DoesNotExist:
+        profile = Profile(user=request.user)
+        profile.save()
     if request.method == 'POST':
         form = ProfileForm(request.POST, request.FILES, instance=profile)
         if form.is_valid():
             form.save()
-    form = ProfileForm(instance=profile)
+    else:
+        form = ProfileForm(instance=profile)
     return render(request, 'profile.html', {'profile': profile, 'form': form})
 
 @login_required
