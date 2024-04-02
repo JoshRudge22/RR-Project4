@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <h1 class="card-title text-center mb-4">Form Submitted</h1>
+          <p class="text-center">Thank you for submitting our contact form.</p>
+          <p class="text-center">Your information has been received, and we will process it shortly.</p>
+          <p class="text-center">If you have any urgent inquiries or you've forgotten key bits of information, please contact us via email by clicking on <a href="mailto:joshrudge@hotmail.com">info@rudgeys.com</a>.</p>
+          <hr>
+          <h2 class="text-center mt-4">What Happens Next?</h2>
+          <p class="text-center">We aim to reply back to a contact form with in 72 hours of it being submitted.</p>
+          <p class="text-center">  We will try to call you two times in the time period that you have selected if we are unable to get a hold of you via the phone we will email.
+            If you haven't received an email within 3 working days please check your junk/spam folders.
+          </p>
+          <p class="text-center">If however you still haven't received an update you can call us on 01925 111111. We are open Monday to Friday 08:30 to 16:00</p>
+          <div class="text-center mt-4">
+            <a href="{% url 'home' %}" class="btn btn-primary">Go to Homepage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -6,8 +6,8 @@ from django.conf import settings
 from .models import Job, Profile, JobApplication
 from .forms import ProfileForm, JobApplicationForm
 
-def submitted(request):
-    return render(request, 'submitted.html')
+def submitted_applying(request):
+    return render(request, 'submitted-applying.html')
 
 
 def jobs(request):
@@ -55,7 +55,7 @@ def applying(request, job_id):
                 recipients,
                 fail_silently=False
             )
-            return redirect('submitted')
+            return redirect('submitted-applying')
     else:
         form = JobApplicationForm()
     return render(request, 'applying.html', {'form': form, 'job': job, 'user_profile': user_profile})

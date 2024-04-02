@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <h1 class="card-title text-center mb-4">Form Submitted</h1>
+          <p class="text-center">Thank you for your application.</p>
+          <p class="text-center">Your information has been received, and we will process it shortly.</p>
+          <p class="text-center">We aim to be in touch with every applicant around 72 hours after applying for the role. If you haven't received an update with 10 working days after you've applied then you have been unsuccessful</p>
+          <hr>
+          <h2 class="text-center mt-4">What Happens Next?</h2>
+          <p class="text-center">Once we have gone through your application one of our agents will attempt to contact you to discuss the role in a bit more detail.</p>
+          <p class="text-center">If you match our client requirements we will then set you up with a interview with one of our agents, this will be either via zoom or face to face.</p>
+          <p class="text-center">Once the interview has been completed we will then send your cv and our notes to our client where they will decide the next steps</p>
+          <p class="text-center">At Rudgeys Recruitment we do aim to give our applicants updates once every 2 working days if you haven't heard anything 2 working days after the interview please give us a call and ask for the agent who conducted the interview. 01925 111111</p>
+          <div class="text-center mt-4">
+            <a href="{% url 'home' %}" class="btn btn-primary">Go to Homepage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

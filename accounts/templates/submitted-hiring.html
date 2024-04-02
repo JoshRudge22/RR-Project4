@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow">
+        <div class="card-body">
+          <h1 class="card-title text-center mb-4">Form Submitted</h1>
+          <p class="text-center">Thank you for submitting our hiring form.</p>
+          <p class="text-center">Your information has been received, and we aim to get this on our job board 48 hours after the form has been submitted.</p>
+          <p class="text-center">We will be in touch once the job has been posted to discuss candidates that have applied, interview dates and payment for advertising the job within 5 working days.</p>
+          <hr>
+          <h2 class="text-center mt-4">What Happens Next?</h2>
+          <p class="text-center">Once we have spoken to you after the job is posted we monitor the cvs that come in on a daily bases.</p>
+          <p class="text-center">We do like to give out weekly updates of candidates we have spoken to via email and telephone. Once we have found a few candidates that fit your needs we will be intouch in regards to the next steps.
+            If you haven't received an email within 5 working days please feel free to contact us asking for updates via the Phone 09125 111111 or vai email <a href="mailto:joshrudge@hotmail.com">info@rudgeys.com</a>.
+          </p>
+          <p class="text-center">We are open Monday to Friday 08:30 to 16:00</p>
+          <div class="text-center mt-4">
+            <a href="{% url 'home' %}" class="btn btn-primary">Go to Homepage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
