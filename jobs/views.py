@@ -34,8 +34,7 @@ def profile(request):
         form = ProfileForm(request.POST, request.FILES, instance=profile)
         if form.is_valid():
             form.save()
-    else:
-        form = ProfileForm(instance=profile)
+    form = ProfileForm(instance=profile)
     return render(request, 'profile.html', {'profile': profile, 'form': form})
 
 @login_required
