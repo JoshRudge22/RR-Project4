@@ -15,7 +15,7 @@ body {
 
 footer {
     background-color: #939ea8;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
     margin-top: auto;
     width: 100%;
@@ -52,6 +52,7 @@ footer {
 
 .form input[type="text"],
 .form input[type="email"],
+.form input[type="password"],
 .form textarea {
     width: 100%;
     padding: 8px;
@@ -135,4 +136,3 @@ textarea {
     font-size: 25px;
 }
 
-/* Log in /*
