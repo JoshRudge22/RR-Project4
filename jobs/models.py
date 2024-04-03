@@ -35,6 +35,7 @@ class Profile(models.Model):
     phone_number = models.CharField(max_length=15, blank=True)
     cv = models.FileField(upload_to='cv/', blank=True)
     address = models.CharField(max_length=100, blank=True)
+    post_code = models.CharField(max_length=8, blank=True)
     notice = models.ManyToManyField('NoticeTimes')
 
     def __str__(self):

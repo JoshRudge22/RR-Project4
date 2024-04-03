@@ -43,5 +43,4 @@ def hiring_form(request):
             return redirect('submitted_hiring')
     else:
         form = HiringForm()
-
     return render(request, 'hiring.html', {'form': form})

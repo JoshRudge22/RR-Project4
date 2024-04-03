@@ -10,3 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+//-----Saving Porifle-----//
+
+document.addEventListener("DOMContentLoaded", function() {
+    const save = document.getElementById("save");
+    if (save) {
+        save.addEventListener("click", function(event) {
+            if (!confirm('Please confirm updates')) {
+                event.preventDefault();
+            }
+        });
+    }
+});

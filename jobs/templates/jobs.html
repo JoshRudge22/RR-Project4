@@ -28,7 +28,7 @@
             {% else %}
             <p class="text-success">This position is currently open for applications.</p>
             {% if job.available_times.all %}
-            <h3 class="card-subtitle mb-3">Appkication Deadline:</h3>
+            <h3 class="card-subtitle mb-3">Application Deadline:</h3>
             <p class="card-text">{{ job.interview_deadline }}</p>                    
             <h3 class="card-subtitle mb-3">Available Interview Times:</h3>
             {% for available_time in job.available_times.all %}
