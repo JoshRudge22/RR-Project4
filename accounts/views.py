@@ -9,10 +9,10 @@ def advertising(request):
     return render(request, 'advertising.html')
 
 def submitted_contact(request):
-    return render(request, 'submitted-contact.html')
+    return render(request, 'submitted_contact.html')
 
 def submitted_hiring(request):
-    return render(request, 'submitted-hiring.html')
+    return render(request, 'submitted_hiring.html')
 
 def contact_view(request):
     if request.method == 'POST':
@@ -30,7 +30,7 @@ def contact_view(request):
                 message=message,
                 best_time_to_contact=best_time_to_contact
             )
-            return redirect('submitted-contact')
+            return redirect('submitted_contact')
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
@@ -40,7 +40,7 @@ def hiring_form(request):
         form = HiringForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('submitted-hiring')
+            return redirect('submitted_hiring')
     else:
         form = HiringForm()
 
