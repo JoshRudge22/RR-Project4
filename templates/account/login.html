@@ -11,10 +11,11 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card p-4">
-                <h1 class="card-title text-center mb-4">{% trans "Sign In" %}</h1>
+                <h1 class="card-title text-center mb-4">{% trans "Login" %}</h1>
 
-                <p class="card-text text-center">{% blocktrans %}If you have not created an account yet, then please
+                <p class="card-text text-center">{% blocktrans %}In order to apply for our jobs you need to have an account. In order to create one click here on
                 <a href="{{ signup_url }}" class="text-decoration-none">sign up</a> first.{% endblocktrans %}</p>
+                <p class="card-text text-center">In order to start applying or updating your account please log in.</p>
 
                 <form class="form login mt-4" method="POST" action="{% url 'account_login' %}">
                     {% csrf_token %}
@@ -22,9 +23,11 @@
                     {% if redirect_field_value %}
                         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                     {% endif %}
-                    <div class="d-grid gap-2 mt-3">
-                        <a class="btn btn-secondary" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+                    <div >
                         <button class="submit btn btn-primary" type="submit">{% trans "Sign In" %}</button>
+                    </div>
+                    <div class="forgotten">
+                        <a class="btn btn-secondary" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
                     </div>
                 </form>
             </div>

@@ -12,20 +12,20 @@
           <form method="post" action="{% url 'applying' job.id %}" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="mb-3">
-              <label for="username" class="form-label">Username</label>
+              <label for="username" class="form-label">Username:</label>
               <input type="text" class="form-control" id="username" value="{{ user.username }}" autocomplete="on" disabled>
             </div>
             <div class="mb-3">
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Email:</label>
                 <input type="email" class="form-control" id="email" value="{{ request.user.profile.email }}" autocomplete="on" disabled>
             </div>
             <div class="mb-3">
-              <label for="address" class="form-label">Address</label>
+              <label for="address" class="form-label">Address:</label>
               <input type="text" class="form-control" id="Address" value="{{ request.user.profile.address }}" autocomplete="on" disabled>
           </div>
             <div class="mb-3">
-                <label for="phone_number" class="form-label">Phone Number</label>
+                <label for="phone_number" class="form-label">Phone Number:</label>
                 <input type="text" class="form-control" id="phone_number" value="{{ request.user.profile.phone_number }}" autocomplete="on" disabled>
             </div>
             <div class="mb-3">
@@ -37,8 +37,8 @@
               {% endif %}
             </div>
             <div class="mb-3">
-              <label for="cover_letter" class="form-label">Cover Letter</label>
-              <textarea class="form-control" id="cover_letter" name="cover_letter" rows="5"></textarea>
+              <label for="cover_letter" class="form-label">Availablity:</label>
+              <textarea class="form-control" id="cover_letter" name="cover_letter" rows="5" placeholder="Please Enter the dates and times we can contact you."></textarea>
             </div>
             <div class="form-group">
               <label for="notice_period" class="form-label">Notice period:</label>
