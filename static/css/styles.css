@@ -41,6 +41,14 @@ footer {
 }
 
 /* Navbar */
+
+
+.logo {
+    width: 400px; 
+    height: 150px;
+}
+
+
 .navbar {
     background-color: #f8f9fa;
 }

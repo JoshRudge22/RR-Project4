@@ -12,16 +12,43 @@ body {
     margin-bottom: 20px;
 }
 
+main {
+    margin-bottom: 40px; 
+}
+
+/* Footer */
 
 footer {
     background-color: #939ea8;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
     margin-top: auto;
     width: 100%;
 }
 
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 40px; 
+    font-size: 24px; 
+}
+
+.social-icon:hover {
+    color: #007bff; 
+}
+
 /* Navbar */
+
+
+.logo {
+    width: 400px; 
+    height: 150px;
+}
+
+
 .navbar {
     background-color: #f8f9fa;
 }
@@ -52,6 +79,7 @@ footer {
 
 .form input[type="text"],
 .form input[type="email"],
+.form input[type="password"],
 .form textarea {
     width: 100%;
     padding: 8px;
@@ -94,6 +122,7 @@ select {
 
 input[type="text"],
 input[type="email"],
+input[type="password"]
 textarea {
     width: 100%; 
     padding: 10px; 
@@ -102,7 +131,11 @@ textarea {
 }
 
 
-/* Pagination */
+/* jobs */
+
+.title {
+    font-size: 40px;
+}
 .pagination {
     margin-top: 20px;
 }
@@ -132,4 +165,8 @@ textarea {
 
 .text-success {
     font-size: 25px;
+}
+
+.forgotten {
+    margin-top: 40px;
 }
