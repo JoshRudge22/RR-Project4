@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import sys
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
@@ -28,7 +29,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-cq7piez4#9_m$1kl!cqgyv^77547fh2=mfc#u)s!%sqwju2bhz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-joshrudge22-rrproject4-utqybqocxk9.ws-eu110.gitpod.io',
 'rudgeys-recruitment-4f97ad5c6479.herokuapp.com']
@@ -107,6 +108,9 @@ WSGI_APPLICATION = 'rr.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
+
+if 'test' in sys.argv:
+    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 CSRF_TRUSTED_ORIGINS = [
     'https://8000-joshrudge22-rrproject4-utqybqocxk9.ws-eu110.gitpod.io',
