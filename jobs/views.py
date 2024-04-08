@@ -42,20 +42,23 @@ def applying(request, job_id):
     job = get_object_or_404(Job, id=job_id)
     user_profile = request.user.profile
     if request.method == 'POST':
-        form = JobApplicationForm(request.POST, request.FILES)
-        if form.is_valid():
-            subject = form.cleaned_data["subject"]
-            message = form.cleaned_data["message"]
-            sender = form.cleaned_data["sender"]
-            recipients = ["joshrudge@hotmail.com"]
-            send_mail(
-                subject,
-                message,
-                sender,
-                recipients,
-                fail_silently=False
-            )
-            return redirect('submitted_applying')
+        # form = JobApplicationForm(request.POST, request.FILES)
+        # if form.is_valid():
+        job_application = JobApplication(user=request.user, job=job)
+        job_application.save()
+        subject = f'New Job application'
+        message = f'You applied to {job.job_title}'
+        sender = 'joshrudge@hotmail.com'
+        recipients = ["joshrudge@hotmail.com", request.user.email]
+        email_sent = send_mail(
+            subject,
+            message,
+            sender,
+            recipients,
+            fail_silently=False
+        )
+        print(f'Email sent {email_sent}')
+        return redirect('submitted_applying')
     else:
         form = JobApplicationForm()
     return render(request, 'applying.html', {'form': form, 'job': job, 'user_profile': user_profile})

@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django import forms 
-from .models import Job, AvailableTime, NoticeTimes
+from .models import Job, AvailableTime, NoticeTimes, JobApplication
 from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Job)
@@ -18,4 +18,8 @@ class AvailableTimeAdmin(admin.ModelAdmin):
     
 @admin.register(NoticeTimes)
 class NoticeTimesAdmin(admin.ModelAdmin):
-    list_display = ['notice']   
+    list_display = ['notice']
+
+@admin.register(JobApplication)
+class JobApplicationAdmin(admin.ModelAdmin):
+    list_display = ['user']   
