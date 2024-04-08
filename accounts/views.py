@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.core.mail import send_mail
 from .forms import ContactForm, HiringForm
 from .models import ContactUsForm, Hiring
 
@@ -30,6 +31,17 @@ def contact_view(request):
                 message=message,
                 best_time_to_contact=best_time_to_contact
             )
+            subject = 'New Contact Form Submission'
+            message = f'Name: {name}\nEmail: {email}\nPhone Number: {phone_number}\nMessage: {message}\nBest Time to Contact: {best_time_to_contact}'
+            sender = 'your-email@example.com'
+            recipients = ['joshridge@hotmail.com']  
+            send_mail(
+                subject,
+                message,
+                sender,
+                recipients,
+                fail_silently=False
+            )
             return redirect('submitted_contact')
     else:
         form = ContactForm()
@@ -40,6 +52,18 @@ def hiring_form(request):
         form = HiringForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
+            subject = 'New Hiring Form Submission'
+            message = 'A new hiring form has been submitted.'
+            sender = 'joshridge@hotmail.com'
+            recipients = ['joshridge@hotmail.com']
+            send_mail(
+                subject,
+                message,
+                sender,
+                recipients,
+                fail_silently=False
+            )
+            
             return redirect('submitted_hiring')
     else:
         form = HiringForm()

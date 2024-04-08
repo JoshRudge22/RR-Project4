@@ -42,8 +42,6 @@ def applying(request, job_id):
     job = get_object_or_404(Job, id=job_id)
     user_profile = request.user.profile
     if request.method == 'POST':
-        # form = JobApplicationForm(request.POST, request.FILES)
-        # if form.is_valid():
         job_application = JobApplication(user=request.user, job=job)
         job_application.save()
         subject = f'New Job application'
