@@ -14,58 +14,70 @@
 </p>
 <h3>Colours</h3>
 <p>These are the colours I used for the background</p>
-<!--Add the image of the colour-->
+<img src="{% static 'images/f5f5f5.png' %}" alt="colours">
+
 <h3>Images</h3>
 <p>I only used one image and that was for my logo that was created by using Shopify Logo Maker</p>
-<!--Add the image of the logo-->
-<p>The Poppins font is the main font used for the body of the website with the <!--Add the font for the titles and for the job description-->. These fonts were imported via Google Fonts. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly.</p>
+<img src="{% static 'images/logo.png' %}" alt="logo">
+<p>The Poppins font is the main font of the website. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly. These fonts were imported via Google Fonts.</p>
 <h3>Wireframes</h3>
 <ul>
-    <li>Index.html
-        <!--Add the wireframe-->
+    <li>
+        Index.html
+        <img src="{% static 'images/index.html.png' %}" alt="index">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Jobs.html
-        <!--Add the wireframe-->
+        <img src="{% static 'images/readme/jobs.html.png' %}" alt="jobs">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Applying.html
-        <!--Add the wireframe-->
+        
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Advertising.html
-        <!--Add the wireframe-->
+        <img src="{% static 'images/readme/advertising.html.png' %}" alt="advertising">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Hiring.html
-        <!--Add the wireframe-->
+        <img src="{% static 'images/readme/hiring.html.png' %}" alt="hiring">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Contact.html
-        <!--Add the wireframe-->
+        <img src="{% static 'images/readme/contact.html.png' %}" alt="contact">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         SignUp.html
-        <!--Add the wireframe-->
+        <img src="{% static 'images/readme/signup.html.png' %}" alt="signup">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Login.html
-        <!--Add the wireframe-->
+        <img src="{% static 'images/readme/login.html.png' %}" alt="login">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Profile.html
-        <!--Add the wireframe-->
+        <img src="{% static 'images/readme/profile.html.png' %}" alt="profile">
+        <!--Add a phone wireframe-->
     </li>
     <li>
         Forgotten Password.html
-        <!--Add the wireframe-->
+        
+        <!--Add a phone wireframe-->
     </li>
 </ul>
 <h2>Agile</h2>
 <p>
     I used the github projects to manage the app whilst using the Agile Method.
     I created 10 user stories with acceptable acceptance criteria to make it clear when the User Story has been completed. The acceptance criteria are further broken down into tasks in order to complete the user story.
-    Link the project with the user stories
+    You can click <a href="https://github.com/users/JoshRudge22/projects/5/views/1">here</a> to view them.
 </p>
 <h2>Data Model</h2>
 <ul>
@@ -109,33 +121,36 @@
 <h3>Navbar</h3>
 <h3>Footer</h3>
 <h2>Index.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/index.lighthouse.png' %}" alt="index">
+<p>The index page just goes into detail about who the company is and the services they can provide wheather you are looking for a job or looking to hire someone in the Warrington area.</p>
 <h2>Jobs.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/jobs.lighthouse.png' %}" alt="jobs">
+<p>In my jobs page I have created a job board, this shows 5 jobs per page and if the user sees a job they would like to apply they just need to click on the apply button which will take them to the new page.</p>
 <h2>Applying.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/applying.lighthouse.png' %}" alt="applying">
+<p>After the user has clicked on the job they would like to apply for they are taken to this form. If the user has yet to log in they will be redirected to the login page where they will be asked to log in. Onve the user is logged in most of the form is filled, this is because when the user logs in we ask them to update their account with a cv, phone number, email ect. Once they are happy to submit the form the form then gets sent to an email address and the admin panel</p>
 <h2>Advertising.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/advertising.lighthouse.png' %}" alt="advertising">
+<p>We then have our advertising page, this goes into a little bit more detail in how we can advertise roles. There is also an example of how we want the form to be filled out. Orginally I wanted to add a word document for the user to download and fill out but was unable to achive this. When the user clicks the Advertise y role button they will be redirected to another page.</p>
 <h2>Hiring.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/hiring.lighthouse.png' %}" alt="hiring">
+<p>We have a form that the user can fill otu explaining who the company is, their contact details, explation of the job and if they have any attachments they may like to include. Once the user ahs filled this form they click submit where they will be redirected to another page advising the form has been submitted. The form then gets sent to an email and the admin panel.</p>
 <h2>Contact.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/contact.lighthouse.png' %}" alt="contact">
+<p>Contact form is created encase the user has any qustion that haven't been answered or they would like more infomation. Once the form has been submmited it is sent to an email address and the admin panel.</p>
 <h2>Signup.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/signup.lighthouse.png' %}" alt="signup">
+<p>Form for the user to fill in order to create their account. Once the account has been created they are then redirected to their account.</p>
+<h2>Profile.html</h2>
+<img src="{% static 'images/readme/profile.lighthouse.png' %}" alt="profile">
+<p>Once the user has signed up or logged in they are redirected to their account page where they can either add or edit theiir details. We take the information from this page and add this to our applying form to stop the user from having to re-enter their details when they apply for more than one job.</p>
 <h2>Login.html</h2>
-<!--Add the lighthouse score-->
-<p></p>
+<img src="{% static 'images/readme/login.lighthouse.png' %}" alt="hiring">
+<p>Form for the user to fill in order to log into their account. Once the user has logged in they are then redirected to their account.</p>
 <h2>Forgotten.html</h2>
 <!--Add the lighthouse score-->
 <p></p>
-<h2>Delpyment to Heroku</h2>
+<h2>Deploying to Heroku</h2>
 <h3>Create the Heroku App</h3>
 <ul>
     <li>Log in to Heroku or create an account.</li>
@@ -163,12 +178,16 @@
     <li>Create a file named "Procfile" in the main directory and add the following: web: gunicorn rr.wsgi</li>
 </ul>
 <h2>Heroku Config Vars</h2>
-<!--Add the config vars-->
+<ul>
+    <li>DISABLE_COLLECTSTATIC</li>
+    <li>DATABASE_URL</li>
+    <li>SECRET_KEY</li>
+</ul>
 <h2>Deploying on Heroku</h2>
 <ul>
     <li>Ensure in project settings, DEBUG is False</li>
     <li>Go to the deploy tab on Heroku and connect to GitHub, then to the required repository.</li>
-    <li>Scroll to the bottom of the deploy page and either click <!--what does it say---></li>
+    <li>Scroll to the bottom of the deploy page and  click deploy branch</li>
     <li>Click View to view the deployed site.</li>
 </ul>
 <h2>Languages Used</h2>
