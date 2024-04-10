@@ -6,6 +6,7 @@ from django.conf import settings
 from .models import Job, Profile, JobApplication
 from .forms import ProfileForm, JobApplicationForm
 
+
 def submitted_applying(request):
     return render(request, 'submitted_applying.html')
 
@@ -23,6 +24,7 @@ def jobs(request):
         jobs = paginator.page(paginator.num_pages)
     return render(request, 'jobs.html', {'jobs': jobs})
 
+
 @login_required
 def profile(request):
     try:
@@ -36,6 +38,7 @@ def profile(request):
             form.save()
     form = ProfileForm(instance=profile)
     return render(request, 'profile.html', {'profile': profile, 'form': form})
+
 
 @login_required
 def applying(request, job_id):
@@ -59,4 +62,5 @@ def applying(request, job_id):
         return redirect('submitted_applying')
     else:
         form = JobApplicationForm()
-    return render(request, 'applying.html', {'form': form, 'job': job, 'user_profile': user_profile})
+    return render(request, 'applying.html',
+                  {'form': form, 'job': job, 'user_profile': user_profile})

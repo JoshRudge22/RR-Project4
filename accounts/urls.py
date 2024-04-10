@@ -1,5 +1,8 @@
 from django.urls import path
-from .views import home, advertising, contact_view, hiring_form, submitted_contact, submitted_hiring
+from .views import (
+    home, advertising, contact_view,
+    hiring_form, submitted_contact, submitted_hiring
+)
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [

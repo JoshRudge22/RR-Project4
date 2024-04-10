@@ -3,17 +3,22 @@ from django.core.mail import send_mail
 from .forms import ContactForm, HiringForm
 from .models import ContactUsForm, Hiring
 
+
 def home(request):
     return render(request, 'index.html')
+
 
 def advertising(request):
     return render(request, 'advertising.html')
 
+
 def submitted_contact(request):
     return render(request, 'submitted_contact.html')
 
+
 def submitted_hiring(request):
     return render(request, 'submitted_hiring.html')
+
 
 def contact_view(request):
     if request.method == 'POST':
@@ -32,9 +37,15 @@ def contact_view(request):
                 best_time_to_contact=best_time_to_contact
             )
             subject = 'New Contact Form Submission'
-            message = f'Name: {name}\nEmail: {email}\nPhone Number: {phone_number}\nMessage: {message}\nBest Time to Contact: {best_time_to_contact}'
+            message = (
+                f'Name: {name}\n'
+                f'Email: {email}\n'
+                f'Phone Number: {phone_number}\n'
+                f'Message: {message}\n'
+                f'Best Time to Contact: {best_time_to_contact}'
+                )
             sender = 'your-email@example.com'
-            recipients = ['joshridge@hotmail.com']  
+            recipients = ['joshridge@hotmail.com']
             send_mail(
                 subject,
                 message,
@@ -46,6 +57,7 @@ def contact_view(request):
     else:
         form = ContactForm()
     return render(request, 'contact.html', {'form': form})
+
 
 def hiring_form(request):
     if request.method == 'POST':
@@ -63,7 +75,7 @@ def hiring_form(request):
                 recipients,
                 fail_silently=False
             )
-            
+
             return redirect('submitted_hiring')
     else:
         form = HiringForm()

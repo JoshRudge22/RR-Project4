@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class ContactUsForm(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(blank=True)
@@ -10,9 +11,10 @@ class ContactUsForm(models.Model):
         ('afternoon', 'Afternoon'),
         ('evening', 'Evening'),
     ], blank=True)
-    
+
     def __str__(self):
         return self.name
+
 
 class Hiring(models.Model):
     company_name = models.CharField(max_length=100)

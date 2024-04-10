@@ -1,19 +1,22 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class Job(models.Model):
     job_title = models.CharField(max_length=100)
     job_benefits = models.TextField()
     address = models.CharField(max_length=60)
-    job_details = models.TextField()    
+    job_details = models.TextField()
     job_requirements = models.TextField()
     interview_deadline = models.DateField(blank=True, null=True)
-    available_times = models.ManyToManyField('AvailableTime', related_name='jobs')
+    available_times = models.ManyToManyField(
+        'AvailableTime', related_name='jobs')
     hired = models.BooleanField()
     notes = models.TextField(null=True)
 
     def __str__(self):
         return self.job_title
+
 
 class AvailableTime(models.Model):
     TIME_CHOICES = [
@@ -28,6 +31,7 @@ class AvailableTime(models.Model):
 
     def __str__(self):
         return self.time
+
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -55,9 +59,12 @@ class NoticeTimes(models.Model):
     def __str__(self):
         return self.notice
 
+
 class JobApplication(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, default=None)
-    job =  models.ForeignKey(Job, on_delete=models.CASCADE, null=True, default=None)
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             null=True, default=None)
+    job = models.ForeignKey(Job, on_delete=models.CASCADE,
+                            null=True, default=None)
 
     def __str__(self):
         return f"Application for {self.job} by {self.user.username}"
