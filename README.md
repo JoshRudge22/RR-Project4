@@ -35,12 +35,12 @@
     <li>
         Jobs.html
         
-![321611727-2fa19871-32ac-40fb-a66a-aa047e3beda3](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a3984f6f-3620-4595-89bc-9853c52e6294)![321611731-06ecc2a2-1a08-411d-bb8b-e9f7d6f0f190](https://github.com/JoshRudge22/RR-Project4/assets/139856712/20f8a4ed-f6d7-4554-9c3d-5d84850aad36)
+![321611727-2fa19871-32ac-40fb-a66a-aa047e3beda3](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a3984f6f-3620-4595-89bc-9853c52e6294)![jobs phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f264dec1-1a87-4160-8b81-c9db2f5b4a9c)
     </li>
     <li>
         Applying.html
         
-![321612095-dc56fa5e-99fb-45fc-99e9-8b5ff3f4dea6](https://github.com/JoshRudge22/RR-Project4/assets/139856712/b8e45de2-4ae3-452f-a022-b942491cc083)![321612098-26a65e52-c16b-43a8-9c9d-822f4e4a1715](https://github.com/JoshRudge22/RR-Project4/assets/139856712/e53ab8c9-906f-498a-905d-479350ea14e4)
+![321612095-dc56fa5e-99fb-45fc-99e9-8b5ff3f4dea6](https://github.com/JoshRudge22/RR-Project4/assets/139856712/b8e45de2-4ae3-452f-a022-b942491cc083)![applying phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/8fc9acd6-5b0f-4075-b59d-2f3e53904387)
     </li>
     <li>
         Advertising.html
@@ -50,27 +50,27 @@
     <li>
         Hiring.html
 
-![321612993-0261c65d-6e95-4947-9223-00876165aac1](https://github.com/JoshRudge22/RR-Project4/assets/139856712/c0067fbf-7d89-430a-9703-e3017cf398f5)![321612991-4a6a7803-14c9-419e-8838-6d4db324f513](https://github.com/JoshRudge22/RR-Project4/assets/139856712/811f48f7-2eb4-4757-963d-2da92ba55ac2)
+![321612993-0261c65d-6e95-4947-9223-00876165aac1](https://github.com/JoshRudge22/RR-Project4/assets/139856712/c0067fbf-7d89-430a-9703-e3017cf398f5)![hiring phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/c601556d-0252-43a0-a66d-3ac3f019771b)
     </li>
     <li>
         Contact.html
 
-![321613389-991d3d2e-6322-45f0-88bd-ef988adfdeac](https://github.com/JoshRudge22/RR-Project4/assets/139856712/664b2233-f23a-42be-8e56-343b73a8aefe)![321613385-a5a0293b-9fd4-4476-9ca0-7d328e5336ce](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f043c93e-6f50-435c-9d00-10366e4e650c)
+![321613389-991d3d2e-6322-45f0-88bd-ef988adfdeac](https://github.com/JoshRudge22/RR-Project4/assets/139856712/664b2233-f23a-42be-8e56-343b73a8aefe)![Contact phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/397aa326-ec44-44da-a50a-e488f9f597d6)
     </li>
     <li>
         SignUp.html
 
-![321613765-47c0846a-d568-4df3-ae36-b0820190dff6](https://github.com/JoshRudge22/RR-Project4/assets/139856712/df8a79c7-4877-4f87-8fec-0f3626305e04)![321613763-0a7e0703-11f1-4d69-b6e0-f0acb7ce8f39](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f80d9dee-7698-4c4c-be75-165239eb745c)
+![321613765-47c0846a-d568-4df3-ae36-b0820190dff6](https://github.com/JoshRudge22/RR-Project4/assets/139856712/df8a79c7-4877-4f87-8fec-0f3626305e04)![Sign Up phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/2819c2a2-90f6-4e35-af1e-625cccd5eff4)
     </li>
     <li>
         Login.html
 
-![321614186-0207a33f-c86e-4c56-a606-74e65c7c5cc1](https://github.com/JoshRudge22/RR-Project4/assets/139856712/4e50b952-8f4f-4e34-8f7b-b8824065f396)![321614182-b99b0647-c3ac-4f59-9b0f-f7f20cf71eb8](https://github.com/JoshRudge22/RR-Project4/assets/139856712/d8bd2003-de1e-4cd4-a876-2e72b1625b68)
+![321614186-0207a33f-c86e-4c56-a606-74e65c7c5cc1](https://github.com/JoshRudge22/RR-Project4/assets/139856712/4e50b952-8f4f-4e34-8f7b-b8824065f396)![login phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/bb0f722e-3ad6-4be3-9eb9-061b4ebf5b40)
     </li>
     <li>
         Profile.html
 
-![321614374-a57f91d6-05ea-49a9-92c9-cc17a77f92f7](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a446d719-06a1-4b09-b1e4-141231b9e8b3)![321614375-7e130716-6475-499f-8567-0836e316b985](https://github.com/JoshRudge22/RR-Project4/assets/139856712/e1d5bd40-ef63-4fbe-a520-8e96d8e4b0d4)
+![321614374-a57f91d6-05ea-49a9-92c9-cc17a77f92f7](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a446d719-06a1-4b09-b1e4-141231b9e8b3)![profile phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/0d8649d4-5b5f-4786-8b47-67864daaaf1b)
     </li>
 </ul>
 <h2>Agile</h2>
@@ -162,6 +162,11 @@
 <p>Contact form is created encase the user has any qustion that haven't been answered or they would like more infomation. Once the form has been submmited it is sent to an email address and the admin panel.</p>
 
 ![321617967-3e2a3559-9970-4f71-a0c0-14534707e424](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f9680284-7698-4609-9919-ff0624bce521)
+<h2>Submitted - All 3.html</h2>
+<p>I have created 3 submitted pages with pretty much the same information bar a paragraph. Once the user has submitted either one of the job application, contact or hiring forms the form is sent to an email and the admin panel and the user is then re-driected to the submitted.html where it explains the next steps.</p>
+
+
+![submitted lighthouse](https://github.com/JoshRudge22/RR-Project4/assets/139856712/c32ca629-652d-4b50-8f3c-e647734e34a5)
 <h2>Signup.html</h2>
 <p>Form for the user to fill in order to create their account. Once the account has been created they are then redirected to their account.</p>
 
@@ -174,6 +179,27 @@
 <p>Form for the user to fill in order to log into their account. Once the user has logged in they are then redirected to their account.</p>
 
 ![321617982-cdf6b373-5e54-4b8a-8839-ebee73582ef5](https://github.com/JoshRudge22/RR-Project4/assets/139856712/961e0d21-8c57-45cd-aef6-6c50e06bcd7c)
+
+<h2>Admin Panel - Creating Jobs</h2>
+<p>Here is where the external user can create jobs, they have job title, job benefits, address, job description, job requirements, deadline date (menaing cvs must be sent in before 07/05 for example) interview times and notes. The user who's viewing the app wont see the notes they are for the extneral user to add details like contact info exct.</p>
+
+![Admin - jobs part 1](https://github.com/JoshRudge22/RR-Project4/assets/139856712/675d2f11-0e33-4627-875e-a3495c346ac0)
+![Admin - jobs part 2](https://github.com/JoshRudge22/RR-Project4/assets/139856712/3a5a04cb-25d2-442b-af86-46641ef089b1)
+
+<h2>Admin Panel - Creating Times</h2>
+<p>Here the external user can create times for interviews. As an example I have created a list of times that last an hour.</p>
+
+![times - admin](https://github.com/JoshRudge22/RR-Project4/assets/139856712/99c8be76-9086-491b-bda1-b07fa37fc475)
+
+<h2>Admin Panel - Creating Notice</h2>
+<p>Here the external user can create notice period for the user to apply in their account. As an example I have created a list for a week, 2 weeks, 3 weeks and so on.</p>
+
+![Notice - Admin](https://github.com/JoshRudge22/RR-Project4/assets/139856712/352b0545-35e2-493a-a897-f301f8293ad3)
+
+<h2>Admin Panel - Contact Form and Hiring Forms</h2>
+<p>As stated before when a form has been submitted the form gets sent to both an email address and the admin panel. This is where the external user can see the form and if the form was a hiring one they can view the job details and copy that infomation over to the jobs to create the job.</p>
+
+![Admin - Contact](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a82af0f2-e153-4639-8f27-3c6cc6926036)
 <h2>Deploying to Heroku</h2>
 <h3>Create the Heroku App</h3>
 <ul>
