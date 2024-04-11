@@ -2,7 +2,7 @@
 <hr>
 <p>
     Rudgeys Recruitment is a recruitment website for the Warrington area. The app is targeted for job seekers and for people looking to hire in the Warrington area, the app has a job board that advertises different types of jobs.
-    In order to view the website please click on the link below......... <h1>(LINK PROJECT)</h1>
+    In order to view the website please click here https://rudgeys-recruitment-4f97ad5c6479.herokuapp.com/
 </p>
 
 <h2>Table of Contents</h2>
@@ -12,45 +12,65 @@
 <p>
     The site has simple and clean colours, I use colours that wouldn’t be off putting for the user when reading the jobs or filling out the forms.
 </p>
-<h3>Colours</h3>
-<p>These are the colours I used for the background</p>
+<h4>Colours</h4>
+<p>The colour I used for the background was #F5F5F5, I went for this as it was easy on the eyes when the user need to read the information off the job board for an example.</p>
 
-<h3>Images</h3>
+![321603296-b71b1417-3bfa-4e72-8c0d-c7fcbfa266ea](https://github.com/JoshRudge22/RR-Project4/assets/139856712/0d0fde78-c4c8-4cea-888e-25d15b83c7a8)
+
+<h4>Images</h4>
 <p>I only used one image and that was for my logo that was created by using Shopify Logo Maker</p>
+
+
+
+<h4>Fonts</h4>
 <p>The Poppins font is the main font of the website. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly. These fonts were imported via Google Fonts.</p>
+
 <h3>Wireframes</h3>
 <ul>
     <li>
         Index.html
-        <!--Add a phone wireframe-->
+        
+![321608324-40d0d0c7-5a34-4b4a-8bad-a0a52516dd1f](https://github.com/JoshRudge22/RR-Project4/assets/139856712/d2d3d5b0-4baa-4d7d-aa8a-9504384dc45d) ![321608329-ca8969be-bc41-43ca-a5e6-06006b8ad300](https://github.com/JoshRudge22/RR-Project4/assets/139856712/cf1a2f5c-40c0-4500-b24c-d453a3012337)
     </li>
     <li>
         Jobs.html
-        <!--Add a phone wireframe-->
+        
+![321611727-2fa19871-32ac-40fb-a66a-aa047e3beda3](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a3984f6f-3620-4595-89bc-9853c52e6294)![321611731-06ecc2a2-1a08-411d-bb8b-e9f7d6f0f190](https://github.com/JoshRudge22/RR-Project4/assets/139856712/20f8a4ed-f6d7-4554-9c3d-5d84850aad36)
     </li>
     <li>
         Applying.html
+        
+![321612095-dc56fa5e-99fb-45fc-99e9-8b5ff3f4dea6](https://github.com/JoshRudge22/RR-Project4/assets/139856712/b8e45de2-4ae3-452f-a022-b942491cc083)![321612098-26a65e52-c16b-43a8-9c9d-822f4e4a1715](https://github.com/JoshRudge22/RR-Project4/assets/139856712/e53ab8c9-906f-498a-905d-479350ea14e4)
     </li>
     <li>
         Advertising.html
+
+![321612742-f149ad6e-25d9-474a-aadd-1f9447abeddd](https://github.com/JoshRudge22/RR-Project4/assets/139856712/0caba8ec-b13a-4461-8509-01b69647af34)![321612740-02eb9503-6223-463f-938d-0784896b1ff2](https://github.com/JoshRudge22/RR-Project4/assets/139856712/645545cf-eb6f-4819-b1b4-6624fcc5bf68)
     </li>
     <li>
         Hiring.html
+
+![321612993-0261c65d-6e95-4947-9223-00876165aac1](https://github.com/JoshRudge22/RR-Project4/assets/139856712/c0067fbf-7d89-430a-9703-e3017cf398f5)![321612991-4a6a7803-14c9-419e-8838-6d4db324f513](https://github.com/JoshRudge22/RR-Project4/assets/139856712/811f48f7-2eb4-4757-963d-2da92ba55ac2)
     </li>
     <li>
         Contact.html
+
+![321613389-991d3d2e-6322-45f0-88bd-ef988adfdeac](https://github.com/JoshRudge22/RR-Project4/assets/139856712/664b2233-f23a-42be-8e56-343b73a8aefe)![321613385-a5a0293b-9fd4-4476-9ca0-7d328e5336ce](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f043c93e-6f50-435c-9d00-10366e4e650c)
     </li>
     <li>
         SignUp.html
+
+![321613765-47c0846a-d568-4df3-ae36-b0820190dff6](https://github.com/JoshRudge22/RR-Project4/assets/139856712/df8a79c7-4877-4f87-8fec-0f3626305e04)![321613763-0a7e0703-11f1-4d69-b6e0-f0acb7ce8f39](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f80d9dee-7698-4c4c-be75-165239eb745c)
     </li>
     <li>
         Login.html
+
+![321614186-0207a33f-c86e-4c56-a606-74e65c7c5cc1](https://github.com/JoshRudge22/RR-Project4/assets/139856712/4e50b952-8f4f-4e34-8f7b-b8824065f396)![321614182-b99b0647-c3ac-4f59-9b0f-f7f20cf71eb8](https://github.com/JoshRudge22/RR-Project4/assets/139856712/d8bd2003-de1e-4cd4-a876-2e72b1625b68)
     </li>
     <li>
         Profile.html
-    </li>
-    <li>
-        Forgotten Password.html
+
+![321614374-a57f91d6-05ea-49a9-92c9-cc17a77f92f7](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a446d719-06a1-4b09-b1e4-141231b9e8b3)![321614375-7e130716-6475-499f-8567-0836e316b985](https://github.com/JoshRudge22/RR-Project4/assets/139856712/e1d5bd40-ef63-4fbe-a520-8e96d8e4b0d4)
     </li>
 </ul>
 <h2>Agile</h2>
@@ -76,44 +96,84 @@
 </ul>
 <h2>Forms</h2>
 <p>If the form is empty or incorrect the form will not be submitted. If an text box hasn't been filled but the user clicks submit the form doesn't get sent and the user is informed where the error is.</p>
+
+![321615314-69605279-7bff-4148-b072-8537e51c814b](https://github.com/JoshRudge22/RR-Project4/assets/139856712/9ed6eef8-1987-4906-a6ed-27bc0b75ec8d)
 <h2>Database</h2>
 <p>The database url and secret key are stored in the env.py file to prevent unwanted connections to the database</p>
 <h2>Error Pages</h2>
 <p>Custom Error Pages were created to give the user more information on the error, in the middle of the page the user will see the home button and navbar to get them off the page</p>
+
+![321615529-d7b8f1e8-a303-439c-b6b1-b54c5a46e0e6](https://github.com/JoshRudge22/RR-Project4/assets/139856712/db0fe682-567e-400a-a1a1-08875fd4b573)
 <ul>
-    <li>400.html
+    <li>
+        <h5>400.html</h5>
+            <p>Oops! It seems there was a problem with your request.</p>
+            <p>Please click the button below to return to the homepage.</p>
     </li>
-    <li>403.html
+    <li>
+        <h5>403.html</h5>
+            <p>Sorry, you are not authorized to access this page.</p>
     </li>
-    <li>404.html
+    <li>
+        <h5>404.html</h5>
+            <p>Oops! The page you requested could not be found.</p>
+            <p>Please check the URL or navigate back to the homepage.</p>
     </li>
-    <li>500.html
+    <li>
+        <h5>500.html</h5>
+            <p>Rudgeys Recruitment is currently unable to handle this request</p>
     </li>
 </ul>
 <h2>Features</h2>
 <h3>logo</h3>
+<p>Created the logo by using the Shopify Logo Maker</p>
+
+![321616252-ed0bd209-4969-499e-af14-e9436a548205](https://github.com/JoshRudge22/RR-Project4/assets/139856712/56aac99d-0d2d-40c9-8bdd-a3da76cf33c5)
 <h3>Navbar</h3>
+<p>This is the navbar wheather the user is looking at this via a computer screen but if they are using a smaller screen they will see a menu toggle bar that brings up the navbar in the same style</p>
+
+![321617306-a094ce20-6878-42f4-8722-5a504961964b](https://github.com/JoshRudge22/RR-Project4/assets/139856712/2335106a-4edd-479e-801c-59c328986c9f)
+![321616601-36fde20d-c3ec-4483-a388-a830f6a913b7](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a6b8b27f-2f90-47e7-ae7c-ca560c1d791f)
 <h3>Footer</h3>
+<p>Footer has 4 soical icons but they are not linked to any soical media profile as I didn't create a Rudgeys Recuriment account.</p>
+
+![321616604-2b4b31cf-a5dd-404b-9424-afec3e940531](https://github.com/JoshRudge22/RR-Project4/assets/139856712/8eb7ddec-ba8e-4e06-97a7-32a8585a29ea)
 <h2>Index.html</h2>
-<p>The index page just goes into detail about who the company is and the services they can provide wheather you are looking for a job or looking to hire someone in the Warrington area.</p>
+<p>The index page just goes into detail about who the company is and the services they can provide wheather you are looking for a job or looking to hire someone in the Warrington area. I have also added the lighthouse score.</p>
+
+![321617973-e284fd80-d70f-46ea-81e0-53be5a60d4ab](https://github.com/JoshRudge22/RR-Project4/assets/139856712/aaa9e74f-f661-41af-81c8-c0c9367c362c)
 <h2>Jobs.html</h2>
 <p>In my jobs page I have created a job board, this shows 5 jobs per page and if the user sees a job they would like to apply they just need to click on the apply button which will take them to the new page.</p>
+
+![321617976-2e69e59f-e265-460d-9a76-4623676b6985](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f521f72c-9303-4359-9178-b036d6864814)
 <h2>Applying.html</h2>
 <p>After the user has clicked on the job they would like to apply for they are taken to this form. If the user has yet to log in they will be redirected to the login page where they will be asked to log in. Onve the user is logged in most of the form is filled, this is because when the user logs in we ask them to update their account with a cv, phone number, email ect. Once they are happy to submit the form the form then gets sent to an email address and the admin panel</p>
+
+![321617963-a7affcb9-6ab7-46f1-9921-5ddd8e626a47](https://github.com/JoshRudge22/RR-Project4/assets/139856712/e04d2a8d-fdf9-4dad-a302-07b418adecef)
 <h2>Advertising.html</h2>
 <p>We then have our advertising page, this goes into a little bit more detail in how we can advertise roles. There is also an example of how we want the form to be filled out. Orginally I wanted to add a word document for the user to download and fill out but was unable to achive this. When the user clicks the Advertise y role button they will be redirected to another page.</p>
+
+![321617958-d158e13c-636e-4bca-a929-fafffca4d577](https://github.com/JoshRudge22/RR-Project4/assets/139856712/966b59d7-bb62-45da-bdd9-b1d7e1edbc07)
 <h2>Hiring.html</h2>
 <p>We have a form that the user can fill otu explaining who the company is, their contact details, explation of the job and if they have any attachments they may like to include. Once the user ahs filled this form they click submit where they will be redirected to another page advising the form has been submitted. The form then gets sent to an email and the admin panel.</p>
+
+![321617971-7873f44e-931d-41da-8dc5-47242f9bc33f](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f6791e4a-5364-4365-990d-35fe9abb5dc4)
 <h2>Contact.html</h2>
 <p>Contact form is created encase the user has any qustion that haven't been answered or they would like more infomation. Once the form has been submmited it is sent to an email address and the admin panel.</p>
+
+![321617967-3e2a3559-9970-4f71-a0c0-14534707e424](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f9680284-7698-4609-9919-ff0624bce521)
 <h2>Signup.html</h2>
 <p>Form for the user to fill in order to create their account. Once the account has been created they are then redirected to their account.</p>
+
+![321617950-1a092856-3f8b-4964-932a-2a54303dbd2d](https://github.com/JoshRudge22/RR-Project4/assets/139856712/ea666055-0c35-4e63-97c5-25b058c60869)
 <h2>Profile.html</h2>
 <p>Once the user has signed up or logged in they are redirected to their account page where they can either add or edit theiir details. We take the information from this page and add this to our applying form to stop the user from having to re-enter their details when they apply for more than one job.</p>
+
+![321617984-73e382d7-2498-49f2-9c28-b353d241fba5](https://github.com/JoshRudge22/RR-Project4/assets/139856712/92183215-596f-4dc0-ae44-d4a0d9e4ad0c)
 <h2>Login.html</h2>
 <p>Form for the user to fill in order to log into their account. Once the user has logged in they are then redirected to their account.</p>
-<h2>Forgotten.html</h2>
-<p></p>
+
+![321617982-cdf6b373-5e54-4b8a-8839-ebee73582ef5](https://github.com/JoshRudge22/RR-Project4/assets/139856712/961e0d21-8c57-45cd-aef6-6c50e06bcd7c)
 <h2>Deploying to Heroku</h2>
 <h3>Create the Heroku App</h3>
 <ul>
