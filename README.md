@@ -80,6 +80,8 @@
     You can click <a href="https://github.com/users/JoshRudge22/projects/5/views/1">here</a> to view them.
 </p>
 <h2>Data Model</h2>
+
+![Data Model](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f0ab4133-dc2c-48e7-8f96-67f233aaf214)
 <ul>
     <li>ContactUsForm: Represents a form for users to contact the website. It includes fields for name, email, phone number, message, and preferred contact time.</li>
     <li>Hiring: Represents a hiring process or job application form. It includes fields for company name, email, phone number, job description, and documentation.</li>
@@ -89,7 +91,6 @@
     <li>NoticeTimes: Represents notice times for job applications. It includes fields for different notice periods.</li>
     <li>JobApplication: Represents job applications submitted by users. It includes a foreign key to the User model and possibly a reference to the Job model</li>
 </ul>
-<h2>Testing</h2>
 <h2>User Authentication</h2>
 <ul>
     <li>Django's LoginRequired is used to make sure that the user cannot apply for any jobs unless they have created an account.</li>
@@ -165,7 +166,6 @@
 <h2>Submitted - All 3.html</h2>
 <p>I have created 3 submitted pages with pretty much the same information bar a paragraph. Once the user has submitted either one of the job application, contact or hiring forms the form is sent to an email and the admin panel and the user is then re-driected to the submitted.html where it explains the next steps.</p>
 
-
 ![submitted lighthouse](https://github.com/JoshRudge22/RR-Project4/assets/139856712/c32ca629-652d-4b50-8f3c-e647734e34a5)
 <h2>Signup.html</h2>
 <p>Form for the user to fill in order to create their account. Once the account has been created they are then redirected to their account.</p>
@@ -200,6 +200,25 @@
 <p>As stated before when a form has been submitted the form gets sent to both an email address and the admin panel. This is where the external user can see the form and if the form was a hiring one they can view the job details and copy that infomation over to the jobs to create the job.</p>
 
 ![Admin - Contact](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a82af0f2-e153-4639-8f27-3c6cc6926036)
+
+<h2>Testing Pages</h2>
+<h4>Validator W3</h4>
+<p>I have validated all the pages from my app. They all have been checked with no errors expect for one.</p>
+
+![index w3c](https://github.com/JoshRudge22/RR-Project4/assets/139856712/135a499d-227b-4bb5-b6cf-201586efbd1d)
+<p>The one with the eroor is on jobs, could not find the p tag in either the jobs.html or the admin panel where the job is created. Other than that the page is fine</p>
+
+![jobs w3c](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f87cf4f5-e2e0-4ce2-b45a-5175e5af1380)
+
+<h4>CI Python Linter</h4>
+<p>Check the python code in the Python Linter and all pages passed will now pass the check with no errors.</p>
+
+![ci python linter](https://github.com/JoshRudge22/RR-Project4/assets/139856712/de7ec0f9-65fa-48c4-b214-49e066f70815)
+
+<h4>JSHint</h4>
+<p>I did create some javascript code to show a message for when the user would like to log out and for when the user has saved their profile details. Checked the code against the JSHint and there was only warnings no errors</p>
+
+![JSHint](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f87d50d2-d481-442a-af91-e9505b78ea44)
 <h2>Deploying to Heroku</h2>
 <h3>Create the Heroku App</h3>
 <ul>
