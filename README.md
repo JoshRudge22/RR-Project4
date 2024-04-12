@@ -14,7 +14,7 @@
 </p>
 <h3>Colours</h3>
 <p>These are the colours I used for the background</p>
-
+![f5f5f5]{readme/F5F5F5.png}
 <h3>Images</h3>
 <p>I only used one image and that was for my logo that was created by using Shopify Logo Maker</p>
 <p>The Poppins font is the main font of the website. Sans Serif is the backup font, in case for any reason the main font isn't being imported into the site correctly. These fonts were imported via Google Fonts.</p>

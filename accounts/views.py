@@ -75,7 +75,6 @@ def hiring_form(request):
                 recipients,
                 fail_silently=False
             )
-
             return redirect('submitted_hiring')
     else:
         form = HiringForm()
