@@ -248,7 +248,6 @@
 </ul>
 <h2>Heroku Config Vars</h2>
 <ul>
-    <li>DISABLE_COLLECTSTATIC</li>
     <li>DATABASE_URL</li>
     <li>SECRET_KEY</li>
 </ul>
