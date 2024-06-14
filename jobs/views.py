@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.contrib.auth.decorators import login_required
+from django.views.generic.edit import DeleteView
+from django.urls import reverse_lazy
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import Job, Profile, JobApplication
@@ -64,3 +66,28 @@ def applying(request, job_id):
         form = JobApplicationForm()
     return render(request, 'applying.html',
                   {'form': form, 'job': job, 'user_profile': user_profile})
+
+
+class ProfileDeleteView(DeleteView):
+    model = Profile
+    success_url = reverse_lazy('home')
+    template_name = 'delete_profile.html'
+
+@login_required
+def delete_profile(request):
+    profile = get_object_or_404(Profile, user=request.user)
+    job_applications = JobApplication.objects.filter(user=request.user)
+
+    if request.method == 'POST':
+        profile.delete()
+        return redirect('home')
+
+    return render(request, 'delete_profile.html', {'profile': profile, 'job_applications': job_applications})
+
+@login_required
+def delete_job_application(request, job_id):
+    job_application = get_object_or_404(JobApplication, id=job_id, user=request.user)
+    if request.method == 'POST':
+        job_application.delete()
+        return redirect('delete_profile')
+    return redirect('delete_profile')

@@ -29,11 +29,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'django-insecure-cq7piez4#9_m$1kl!cqgyv^77547fh2=mfc#u)s!%sqwju2bhz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-joshrudge22-rrproject4-utqybqocxk9.ws-eu110.gitpod.io',
+ALLOWED_HOSTS = ['8000-joshrudge22-rrproject4-qd9ccemlyme.ws-eu114.gitpod.io',
 'rudgeys-recruitment-4f97ad5c6479.herokuapp.com']
 
 
@@ -115,7 +115,7 @@ if 'test' in sys.argv:
     DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-joshrudge22-rrproject4-utqybqocxk9.ws-eu110.gitpod.io',
+    'https://8000-joshrudge22-rrproject4-qd9ccemlyme.ws-eu114.gitpod.io',
     'https://rudgeys-recruitment-4f97ad5c6479.herokuapp.com'
 ]
 
