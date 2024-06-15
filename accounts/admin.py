@@ -7,7 +7,7 @@ admin.site.register(ContactUsForm)
 class HiringAdmin(admin.ModelAdmin):
     list_display = [
         'company_name', 'email', 'phone_number',
-        'job_description', 'download_job_doc'
+        'job_description', 'job_description'
     ]
 
     def download_job_doc(self, obj):

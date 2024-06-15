@@ -22,3 +22,6 @@ class Hiring(models.Model):
     phone_number = models.CharField(max_length=20, blank=True, null=True)
     job_description = models.TextField(blank=True, null=True)
     documentation = models.FileField(upload_to='cv/', null=True, blank=True)
+
+    def __str__(self):
+        return self.company_name 
