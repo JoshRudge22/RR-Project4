@@ -14,7 +14,7 @@ def submitted_applying(request):
 
 
 def jobs(request):
-    jobs = Job.objects.all()
+    jobs = Job.objects.all().order_by('id')
     items_per_page = 5
     paginator = Paginator(jobs, items_per_page)
     page = request.GET.get('page')
@@ -75,14 +75,20 @@ class ProfileDeleteView(DeleteView):
 
 @login_required
 def delete_profile(request):
-    profile = get_object_or_404(Profile, user=request.user)
-    job_applications = JobApplication.objects.filter(user=request.user)
+    user = request.user
+    profile = get_object_or_404(Profile, user=user)
+    job_applications = JobApplication.objects.filter(user=user)
 
     if request.method == 'POST':
+        job_applications.delete()
         profile.delete()
+        user.delete()
         return redirect('home')
 
     return render(request, 'delete_profile.html', {'profile': profile, 'job_applications': job_applications})
+
+def home(request):
+    return render(request, 'base.html')
 
 @login_required
 def delete_job_application(request, job_id):

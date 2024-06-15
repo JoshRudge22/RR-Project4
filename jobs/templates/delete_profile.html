@@ -1,27 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Confirm Profile Deletion</h1>
-<form method="post" action="{% url 'delete_profile' %}">
-    {% csrf_token %}
-    <p>Are you sure you want to delete your profile? This will also delete all your job applications.</p>
-    <button type="submit">Delete Profile</button>
-</form>
-
-<h2>Your Job Applications</h2>
+<h2 class="delete-title">Your Job Applications</h2>
+<p class="delete-p">Here you can see all the jobs you have applied for. If you are no longer intrested in a role you can canel your application by clicking the button below the job.</p>
 {% if job_applications %}
-    <ul>
+    <ul class="delete-section">
         {% for job_application in job_applications %}
             <li>
-                {{ job_application.job.job_title }}
+                {{ job_application.job.job_title }} -
+                {{ job_application.job.address }}
                 <form method="post" action="{% url 'delete_job_application' job_application.id %}">
                     {% csrf_token %}
-                    <button type="submit">Delete Application</button>
+                    <button id="cancel" class="delete-button" type="submit">Cancel Application</button>
                 </form>
             </li>
         {% endfor %}
     </ul>
 {% else %}
-    <p>No job applications found.</p>
+    <p class="no-jobs">No job applications found.</p>
 {% endif %}
+
+<h1 class="delete-title">Confirm Profile Deletion</h1>
+<form class="delete-section" method="post" action="{% url 'delete_profile' %}">
+    {% csrf_token %}
+    <p class="delete-p">Are you sure you want to delete your profile? This will also delete all your job applications.</p>
+    <button id="remove" class="delete-button" type="submit" >Delete Profile</button>
+</form>
+
 {% endblock %}
