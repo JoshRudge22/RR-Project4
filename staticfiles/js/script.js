@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+//-----Canceling Applications-----//
+
 document.addEventListener("DOMContentLoaded", function() {
     const cancel = document.getElementById("cancel");
     if (cancel) {
@@ -35,11 +37,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+//-----Deleting Jobs-----//
+
 document.addEventListener("DOMContentLoaded", function() {
     const remove = document.getElementById("remove");
     if (remove) {
         remove.addEventListener("click", function(event) {
-            if (!confirm('Please confirm you would like to cancel this job application')) {
+            if (!confirm('Please confirm you would like to delete your profile? This will also delete all your pending job applications?')) {
                 event.preventDefault();
             }
         });

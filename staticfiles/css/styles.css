@@ -170,3 +170,47 @@ textarea {
     margin-top: 40px;
 }
 
+/* Deleting */
+
+.delete-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.delete-title {
+    text-align: center;
+    font-size: 28px;
+    color: #721c24;
+    margin-top: 40px;
+}
+
+.delete-p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.no-jobs {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
