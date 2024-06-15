@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
+{% block title %}Canceling Account{% endblock %}
+
+{% load static %}
+
 {% block content %}
 <h2 class="delete-title">Your Job Applications</h2>
-<p class="delete-p">Here you can see all the jobs you have applied for. If you are no longer intrested in a role you can canel your application by clicking the button below the job.</p>
+<p class="delete-p">Here you can see all the jobs you have applied for. If you are no longer interested in a role you can cancel your application by clicking the button below the job.</p>
 {% if job_applications %}
     <ul class="delete-section">
         {% for job_application in job_applications %}
@@ -20,11 +24,11 @@
     <p class="no-jobs">No job applications found.</p>
 {% endif %}
 
-<h1 class="delete-title">Confirm Profile Deletion</h1>
+<h2 class="delete-title">Confirm Profile Deletion</h2>
 <form class="delete-section" method="post" action="{% url 'delete_profile' %}">
     {% csrf_token %}
     <p class="delete-p">Are you sure you want to delete your profile? This will also delete all your job applications.</p>
-    <button id="remove" class="delete-button" type="submit" >Delete Profile</button>
+    <button id="remove" class="delete-button" type="submit">Delete Profile</button>
 </form>
 
 {% endblock %}
