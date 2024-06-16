@@ -64,6 +64,12 @@
 
 ![321614374-a57f91d6-05ea-49a9-92c9-cc17a77f92f7](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a446d719-06a1-4b09-b1e4-141231b9e8b3)![profile phone](https://github.com/JoshRudge22/RR-Project4/assets/139856712/0d8649d4-5b5f-4786-8b47-67864daaaf1b)
     </li>
+    <li>
+        Delete_Profile.html
+
+![delete html full](https://github.com/JoshRudge22/RR-Project4/assets/139856712/e5ba5266-b935-46a3-ad95-654e48fb6b39)![phone-delete html](https://github.com/JoshRudge22/RR-Project4/assets/139856712/8644c630-4e42-4851-8343-27524cb043f5)
+
+    
 </ul>
 <h2>Agile</h2>
 <p>
@@ -155,7 +161,7 @@
 <p>Contact form is created encase the user has any question that haven't been answered or they would like more information. Once the form has been submitted it is sent to an email address and the admin panel.</p>
 
 ![321617967-3e2a3559-9970-4f71-a0c0-14534707e424](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f9680284-7698-4609-9919-ff0624bce521)
-<h2>Submitted - All 3.html</h2>
+<h2>Submitted - All 3 .html</h2>
 <p>I have created 3 submitted pages with pretty much the same information bar a paragraph. Once the user has submitted either one of the job application, contact or hiring forms the form is sent to an email and the admin panel and the user is then re-directed  to the submitted.html where it explains the next steps. Exmaple being if the user has filled out the contact form they get redirected to the submitted_contact.html telling them what we do with the contact form and how long they should have to wait for an update.</p>
 
 ![submitted lighthouse](https://github.com/JoshRudge22/RR-Project4/assets/139856712/c32ca629-652d-4b50-8f3c-e647734e34a5)
@@ -171,6 +177,12 @@
 <p>Form for the user to fill in order to log into their account. Once the user has logged in they are then redirected to their account.</p>
 
 ![321617982-cdf6b373-5e54-4b8a-8839-ebee73582ef5](https://github.com/JoshRudge22/RR-Project4/assets/139856712/961e0d21-8c57-45cd-aef6-6c50e06bcd7c)
+
+<h2>Delete_Profile.html</h2>
+<p>Here the user is able to delete any job applications, they start off by seeing all the job titles and the address with the cancel button below them. Once the user has clicked this button the job is removed from the page and also from the admin panel.</p>
+<p>The user can also delete their profile. With this the users info is removed from the admin panel and it cancels all the jobs the user has appiled for. They also get an alert to confirm if they want to either cancel the job application or delete their profile.</p>
+
+![lighthouse-delete](https://github.com/JoshRudge22/RR-Project4/assets/139856712/32e1614f-2dec-4a68-9fca-f9ecfae66c89)
 
 <h2>Logout</h2>
 <p>I didn't user the log out page that was created when I added the allauth, instead I used the logout in the navbar as a button where once the user would like to log out they click the logout and then a message appears at the top confirming if they want to log out.</p>
@@ -216,9 +228,9 @@
 ![ci python linter](https://github.com/JoshRudge22/RR-Project4/assets/139856712/de7ec0f9-65fa-48c4-b214-49e066f70815)
 
 <h4>JSHint</h4>
-<p>I did create some javascript code to show a message for when the user would like to log out and for when the user has saved their profile details. Checked the code against the JSHint and there was only warnings no errors</p>
+<p>I did create some javascript code to show a message for when the user would like to log out, for when the user has saved their profile details, when the user would like to cancel their job application and when the user would like to delete their whole account. Checked the code against the JSHint and there was only warnings no errors</p>
 
-![JSHint](https://github.com/JoshRudge22/RR-Project4/assets/139856712/f87d50d2-d481-442a-af91-e9505b78ea44)
+![JSHint](https://github.com/JoshRudge22/RR-Project4/assets/139856712/e3dd91cb-3516-4b33-a25b-ab1ac2abc6fe)
 <h2>Deploying to Heroku</h2>
 <h3>Create the Heroku App</h3>
 <ul>
