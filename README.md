@@ -213,7 +213,17 @@
 
 ![Admin - Contact](https://github.com/JoshRudge22/RR-Project4/assets/139856712/a82af0f2-e153-4639-8f27-3c6cc6926036)
 
+<h2>Env.py</h2>
+<p>Added the env.py which should hide the DATABASE_URL and the secret code.</p>
+
+![ENV py](https://github.com/user-attachments/assets/463df3e5-5ba5-453b-a3e3-5d7eeb66c583)
+
 <h2>Testing Pages</h2>
+<h4>Tests.py</h4>
+<p>I have created the tests to test each form. In the tests I have written what I expect from the test, the reason why I am testing and the result each test gives me just like the example below. I ran all test which have now all passed</p>
+
+![Testing Example](https://github.com/user-attachments/assets/1a003c34-aa31-469d-80e3-50ca3612eeb5)
+
 <h4>Validator W3</h4>
 <p>I have validated all the pages from my app. They all have been checked with no errors expect for one.</p>
 
